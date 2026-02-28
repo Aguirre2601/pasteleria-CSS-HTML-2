@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/*fuentes*/
+.letraTitulo{
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;  color: rgb(243, 117, 14);
+}
+
+.letraEspecial{
+    font-family: "Elsie Swash Caps", serif;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.letraBody{
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+/*barra*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*z-index: 3; 
+    */
+    text-align: center;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.712); 
+
+}
+
+header nav {
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+header a {
+    color: rgb(243, 226, 212);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header ul {
+    display: flex;
+    gap:30px;
+}
+
+header ul li {
+    list-style: none;
+    color: rgb(240, 240, 240);
+}
+
+header ul li :hover{
+    color: rgb(243, 117, 14);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.fondo{
+    /*background:rgb(152, 111, 57); */
+     min-height: 100vh; /* Altura mínima de la sección */
+    width: 100%; /* Ocupa todo el ancho */
+    background: url('./img/img\ \(1\).jpg') no-repeat center center;
+}
+/*seccion*/
+.seccion-principal {
+    background-size: cover; /* La imagen cubre toda la sección */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; 
+    color: white;  
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.seccion-principal h1 {
+    font-size: 5rem; 
+    margin-bottom: 20px; 
+}
+
+.seccion-principal p {
+    font-size: 2rem; 
+    max-width: 800px; 
+}
+/*estilo de card*/
+.card {
+    background: rgba(0, 0, 0, 0.74); 
+    padding: 40px;
+    border-radius: 10%;
+    margin-top: 10%;
+}
+/*estilo contenedor flex*/
+.contededor{
+    background: rgba(0, 0, 0, 0.74); 
+    padding: 20px;
+    border-radius: 2%;
+    margin-top: 10%;
+}
+.contenedorFlexColumn{
+    display: flex;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    justify-content: space-evenly; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+/*footer*/
+.contenedorFlexColumn h3{
+    color: rgb(12, 8, 0);
+    font-size: 1.2rem;
+}
+/*estilo de galeria*/
+.carrusel3D {
+    display: flex;
+    width: 95%;
+    height: 13cm; 
+    margin: 20px;
+
+}
+.carrusel3D img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8; /* Opacidad de las imágenes */
+    transition: transform 5s, opacity 1s; /* Transiciones suaves */
+}
+.carrusel3D img:hover {
+    cursor: default;
+    width: 400px;
+    filter: contrast(120%);
+    opacity: 1; /* Hace la imagen completamente visible */
+}
+#iframe{
+    width:100%;
+    height: 100%;
+    border: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/**/
+/*estilo de contacto*/
+.cardContacto {
+    display: flex; /* Activa Flexbox en el body */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+.contacto {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.628); 
+    border-radius: 2%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    justify-content: space-evenly; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    color: aliceblue;
+    text-align: center;
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 500px; /* Opcional: limita el ancho máximo */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: rgba(243, 117, 14, 0.534);
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina la línea subrayada */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center;
+    font-size: 2rem; /* Tamaño de fuente */
+    cursor: pointer;
+    border:2px solid rgb(255, 241, 219);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    margin: 20px;
+
+}
+
+.boton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 117, 14);
+}
+/*pedidio */
+/*cosas de abajo */
+.contenedorFlexRow{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.contenedorFlexRow div{
+    background-color: rgb(212, 122, 5);
+    width: 50%;
+    height: 50%;
+    border-radius: 5%;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.contenedorFlexRow h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.contenedorFlexRow button{
+    background-color:transparent;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:  rgb(255, 241, 219);
+    color: rgb(255, 211, 175);
+    padding: 10px 20px; 
+    font-size: 50px;
+    margin: 50px;
+}
+.contenedorFlexRow button:hover{
+    background-color: rgb(255, 241, 219);
+    color: rgb(241, 120, 20);
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
